@@ -4,14 +4,14 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480pc) {
+  @media screen and (min-width: 480px) {
     width: 576px;
   }
-  @media screen and (min-width: 480pc) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
-  @media screen and (min-width: 480pc) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }

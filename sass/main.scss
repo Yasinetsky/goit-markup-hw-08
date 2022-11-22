@@ -1,19 +1,17 @@
 // utils styles
 
-@import "./utils/variables"; 
+@import "./utils/variables";
 @import "./utils/hidden";
 @import "./utils/placeholder";
 @import "./utils/mixin";
 
 // base styles
+
 @import "./base/base";
-@import "./base/reset";     
-
-
-
-
+@import "./base/reset";
 
 // components styles
+
 @import "./components/container";
 @import "./components/section";
 @import "./components/buttons";
@@ -31,4 +29,3 @@
 @import "./components/subscribe";
 @import "./components/project-filter";
 @import "./components/project-group";
-
