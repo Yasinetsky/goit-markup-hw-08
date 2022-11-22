@@ -1,0 +1,28 @@
+.clients__iten+.clients__iten {
+    margin-left: 30px;
+}
+
+
+.clients__list {
+    @extend %list;
+    display: flex;
+}
+
+.clients__link {
+    @include centeredFlex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-border-color);
+    border-radius: 4px;
+    fill: var(--icon-border-color);
+    transition: fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    fill: var(--accent-color);
+    }
+}
+
