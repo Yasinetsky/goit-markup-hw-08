@@ -9,13 +9,13 @@
 
   color: var(--primary-color-white);
   background-color: var(--accent-color);
-  
+
   font-family: inherit;
   cursor: pointer;
   text-align: center;
 
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .button.primary {
@@ -28,10 +28,9 @@
   background-color: var(--accent-color);
 }
 
-
 .button__subscribe {
   @include centeredFlex;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
