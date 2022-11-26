@@ -611,8 +611,29 @@ html {
   fill: var(--primary-color-white);
 }
 
+.clients__iten {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.clients__iten:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__iten + .clients__iten {
+    margin-left: 30px;
+  }
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .clients__link {
-  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-border-color);
   border-radius: 4px;
@@ -624,6 +645,11 @@ html {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .subscribe__mail {
