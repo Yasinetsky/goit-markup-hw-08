@@ -1,6 +1,6 @@
-// .project-filter__item + .project-filter__item {
-//   margin-left: 8px;
-// }
+.project-filter__item + .project-filter__item {
+  margin-left: 8px;
+}
 
 .project-filter__button {
   font-weight: 500;
@@ -26,8 +26,8 @@
   }
 }
 
-// .project-filter {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 50px;
-// }
+.project-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

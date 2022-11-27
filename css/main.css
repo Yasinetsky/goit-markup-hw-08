@@ -769,6 +769,7 @@ html {
 @media screen and (min-width: 1200px) {
   .features__list {
     display: flex;
+    margin-bottom: 94px;
   }
 }
 
@@ -906,12 +907,31 @@ html {
   fill: var(--primary-color-white);
 }
 
-.clients__iten {
+@media screen and (max-width: 767px) {
+  .clients {
+    display: none;
+  }
+}
+
+.clients__iten + .clients__iten {
   margin-left: 30px;
+}
+
+.clients__iten {
   margin-bottom: 30px;
 }
-.clients__iten:nth-child(2n+1) {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .clients__iten {
+    width: 226px;
+  }
+  .clients__iten:nth-child(4) {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__iten {
+    width: 170px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -923,12 +943,16 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+}
 
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-border-color);
   border-radius: 4px;
@@ -986,6 +1010,10 @@ html {
   }
 }
 
+.project-filter__item + .project-filter__item {
+  margin-left: 8px;
+}
+
 .project-filter__button {
   font-weight: 500;
   font-size: 16px;
@@ -1004,7 +1032,14 @@ html {
   border-radius: 4px;
 }
 
+.project-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .project-group {
+  display: flex;
   flex-wrap: wrap;
   transition: box-shadow 250ms var(--timing-function);
 }
@@ -1030,6 +1065,14 @@ html {
 
 .project-group__item {
   width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-group__item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+.project-group__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .project-group__image {
@@ -1042,11 +1085,14 @@ html {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 
 .portfolio-overlay__info {
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
