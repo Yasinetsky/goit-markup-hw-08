@@ -1010,10 +1010,19 @@ html {
   }
 }
 
-.project-filter__item + .project-filter__item {
+.project-filter__item {
   margin-left: 8px;
+  margin-bottom: 21px;
+}
+.project-filter__item:nth-child(4), .project-filter__item:nth-child(1) {
+  margin-left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .project-filter__item + .project-filter__item {
+    margin-left: 8px;
+  }
+}
 .project-filter__button {
   font-weight: 500;
   font-size: 16px;
@@ -1034,13 +1043,14 @@ html {
 
 .project-filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .project-group {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   transition: box-shadow 250ms var(--timing-function);
 }
 

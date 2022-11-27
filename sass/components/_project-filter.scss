@@ -1,5 +1,16 @@
-.project-filter__item + .project-filter__item {
+.project-filter__item {
   margin-left: 8px;
+  margin-bottom: 21px;
+  &:nth-child(4),
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .project-filter__item + .project-filter__item {
+    margin-left: 8px;
+  }
 }
 
 .project-filter__button {
@@ -28,6 +39,7 @@
 
 .project-filter {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
