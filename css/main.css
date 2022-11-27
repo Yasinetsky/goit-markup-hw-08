@@ -398,6 +398,7 @@ html {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .footer__logo--white {
@@ -426,8 +427,10 @@ html {
   display: inline-block;
 }
 
-.container__footer {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .container__footer {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container__footer {
