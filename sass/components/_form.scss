@@ -22,8 +22,8 @@
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
 
   background-color: var(--primary-color-white);
 
@@ -32,13 +32,23 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .form {
-  width: 528px;
+  width: 450px;
+
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+  }
 }
 
 .form__titel {
+  margin-left: 30px;
   margin-top: 40px;
   margin-bottom: 12px;
   font-weight: 700;
@@ -47,6 +57,12 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+    margin-left: 30px;
+    display: inline-block;
+  }
 }
 
 .form__field {
@@ -137,7 +153,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
@@ -145,6 +161,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .form__legality .form__legality-label a {
