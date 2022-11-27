@@ -1,5 +1,4 @@
 .logo {
-  // margin-right: 93px;
   margin-top: auto;
   margin-bottom: auto;
 
@@ -9,6 +8,14 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 93px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .logo--black {
