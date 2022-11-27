@@ -819,7 +819,7 @@ html {
   }
 }
 
-.team__item + .team__item {
+.team__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
