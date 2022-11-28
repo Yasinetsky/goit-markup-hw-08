@@ -39,7 +39,11 @@
 
 .project-filter {
   display: flex;
-  // justify-content: center;
+
   flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+  }
 }

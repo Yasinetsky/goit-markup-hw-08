@@ -1,9 +1,6 @@
 .project-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   transition: box-shadow 250ms var(--timing-function);
 }
 
