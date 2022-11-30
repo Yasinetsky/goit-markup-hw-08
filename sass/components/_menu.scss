@@ -12,6 +12,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  fill: var(--primary-text-color);
 }
 
 @media (min-width: 768px) {
@@ -22,7 +23,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: var(--accent-color);
 }
 
 .menu-container {
