@@ -18,6 +18,10 @@
 }
 
 .project-group__item {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   box-shadow: 0;
   transition: box-shadow 250ms var(--timing-function);
 

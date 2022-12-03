@@ -1001,6 +1001,9 @@ html {
     width: 354px;
     margin-bottom: 30px;
   }
+  .team__item:nth-child(n+3) {
+    margin-bottom: 0;
+  }
   .team__item:nth-child(2n) {
     margin-left: 30px;
   }
@@ -1080,6 +1083,9 @@ html {
   }
   .clients__iten:nth-child(4) {
     margin-left: 0;
+  }
+  .clients__iten:nth-child(n+4) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1244,6 +1250,9 @@ html {
 .project-group__item {
   box-shadow: 0;
   transition: box-shadow 250ms var(--timing-function);
+}
+.project-group__item:last-child {
+  margin-bottom: 0;
 }
 .project-group__item:hover {
   cursor: pointer;
