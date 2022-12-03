@@ -864,9 +864,18 @@ html {
 }
 
 .features {
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-bottom: 60px;
+  }
 }
 
+.features__item:nth-last-child(n+3) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
@@ -874,6 +883,9 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (min-width: 768px) {
   .features__item:nth-child(2n) {
     margin-left: 26px;
   }
@@ -910,7 +922,7 @@ html {
   margin-top: 0;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features__text {
     margin-bottom: 0;
   }
