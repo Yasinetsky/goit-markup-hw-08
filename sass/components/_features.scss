@@ -31,6 +31,10 @@
 }
 
 .features__title {
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+
   min-width: 270px;
   font-weight: 700;
   font-size: 14px;

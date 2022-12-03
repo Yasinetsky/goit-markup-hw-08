@@ -234,6 +234,11 @@ html {
 .main-nav {
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding: 18px;
+  }
+}
 
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
@@ -872,6 +877,11 @@ html {
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
+@media screen and (max-width: 768px) {
+  .features__title {
+    text-align: center;
+  }
+}
 
 .features__text {
   display: block;
@@ -895,14 +905,17 @@ html {
   border-radius: 4px;
 }
 
-.about__list {
+.about {
   display: none;
-  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
-  .about__list {
+  .about {
     display: flex;
   }
+}
+
+.about__list {
+  justify-content: center;
 }
 
 .about__item:not(:last-child) {

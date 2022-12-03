@@ -1,10 +1,15 @@
-.about__list {
-  @extend %list;
+.about {
   display: none;
-  justify-content: center;
+
   @media screen and (min-width: $desktop) {
     display: flex;
   }
+}
+
+.about__list {
+  @extend %list;
+
+  justify-content: center;
 }
 
 .about__item:not(:last-child) {
