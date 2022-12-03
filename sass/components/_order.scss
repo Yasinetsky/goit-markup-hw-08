@@ -1,6 +1,14 @@
 .order--hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .order {
