@@ -8,7 +8,7 @@
 
 .about__list {
   @extend %list;
-
+  display: flex;
   justify-content: center;
 }
 
