@@ -595,7 +595,6 @@ html {
 
 .order__overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -842,8 +841,15 @@ html {
   border: 2px solid var(--accent-color);
 }
 
-.buton.submit {
+.button.submit {
+  letter-spacing: 0.06em;
+  line-height: 30\16 ;
+  font-weight: 700;
+  font-size: 16px;
   width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .form__icon-close {
@@ -863,12 +869,14 @@ html {
   fill: var(--accent-color);
 }
 
-.features {
-  padding-bottom: 0px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200) {
+  .features {
+    padding-bottom: 94px;
   }
 }
 
@@ -922,6 +930,11 @@ html {
   line-height: 1.7142857143;
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .features__text:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__text {

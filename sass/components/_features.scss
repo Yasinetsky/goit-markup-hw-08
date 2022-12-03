@@ -1,8 +1,10 @@
 .features {
-  padding-bottom: 0px;
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200) {
+    padding-bottom: 94px;
   }
 }
 
@@ -32,7 +34,6 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    // margin-bottom: 94px;
   }
 }
 
@@ -61,6 +62,12 @@
   line-height: calc(24 / 14);
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
